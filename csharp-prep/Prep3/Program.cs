@@ -8,12 +8,13 @@ class Program
         int magicNumber = randomGenerator.Next(1, 101);
         int guess = -1;
         int attempts = 0;
+        Console.WriteLine($"What is the magic number?");
 
         while (magicNumber != guess)
         {
-            Console.Write("What is the magic number? ");
+            Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
-            attempts++;
+            attempts++; 
 
                 if (magicNumber < guess)
                  {
@@ -25,6 +26,7 @@ class Program
                      Console.WriteLine("Higher");
                  }
         }
-        Console.WriteLine($"Congratulation it took you {attempts} attempts");
+        Console.WriteLine($"Congratulation! the magic number is {magicNumber}");
+        Console.WriteLine($"It took you {attempts} attempts");
     }
 }
