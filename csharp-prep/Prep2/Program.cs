@@ -7,29 +7,35 @@ class Program
         Console.Write("Type your note: ");
         string userInput = Console.ReadLine();
         float number = int.Parse(userInput);
+        string letter = "";
         
         if (number >= 90) 
         {
-            Console.WriteLine("Your grade is: A ");
+            letter = "A";
         }
         else if (number >= 80)
         {
-            Console.WriteLine("Your grade is: B ");
+            letter = "B";
         }
         else if (number >= 70)
         {
-            Console.WriteLine("Your grade is: C ");
-            Console.WriteLine("You passed the course! ");
+            letter = "C";
         }
         else if (number >= 60)
         {
-            Console.WriteLine("Your grade is: D ");
-            Console.WriteLine("You will do it better next time ");
+            letter = "F";
         }
-        else if (number < 60)
+
+        Console.WriteLine($"Your grade is: {letter}");
+
+        if (number >= 70)
         {
-            Console.WriteLine("Your grade is: F ");
-            Console.WriteLine("You will do it better next time ");
+            Console.WriteLine("You passed the couse! ");
+        }
+        
+        else
+        {
+            Console.WriteLine("You will do it better next time");
         }
 
     }
