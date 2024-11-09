@@ -23,6 +23,10 @@ class Program
         }
         else if (number >= 60)
         {
+            letter = "D";
+        }
+        else 
+        {
             letter = "F";
         }
 

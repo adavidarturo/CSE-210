@@ -8,7 +8,7 @@ class Program
 
         int addItem = -1;
         List <int> numbersList = new List<int>();
-        int sum = 0;
+        int sum = -1;
         int largest = int.MinValue;
 
         Console.WriteLine("Enter alist of numbers, type 0 when finished. ");
