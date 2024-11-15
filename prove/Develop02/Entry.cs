@@ -19,7 +19,7 @@ public class Entry
     // Method to display the Entry class
     public void Display()
     {
-        Console.WriteLine($"Date: {_date.ToString("MM-dd-yyyy")} - Prompt: {_messageText} - Entry: {_entryText}");
+        Console.WriteLine($"Date: {_date.ToString("MM-dd-yyyy")} - Prompt: {_messageText} - Answer: {_entryText}");
         // .ToString to convert _date to string
     }
 }

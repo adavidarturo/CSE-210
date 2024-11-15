@@ -31,7 +31,7 @@ public class Journal
             foreach (Entry entry in _entries) // For each entry in the _entries list
             {
                 // Write this way with "|" separators
-                writer.WriteLine($"{entry._date.ToString("MM-dd-yyyy")} | {entry._messageText}| {entry._entryText}");
+                writer.WriteLine($"{entry._date.ToString("MM-dd-yyyy")} | {entry._messageText} | {entry._entryText}");
             }
         }
         Console.WriteLine("Journal saved successfully... ");
@@ -59,7 +59,7 @@ public class Journal
                 // Now add the new Entry object to the _entries list
                 AddEntry(entry);
             }
-            Console.WriteLine("Journal loaded successfully.");
+            Console.WriteLine("Journal loaded successfully...");
         }
         else // If the file doesn't exist 
         {
