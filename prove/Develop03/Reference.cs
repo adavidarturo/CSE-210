@@ -20,8 +20,8 @@ public class Reference
     {
         _book = book;
         _chapter = chapter;
-        _verse = startVerse;
-        _endVerse = endVerse; // End of the verse range
+        _verse = startVerse; // Star of the verse
+        _endVerse = endVerse; // End of the verse 
     }
 
     // Method to Display the References
