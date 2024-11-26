@@ -28,7 +28,7 @@ public class Scripture
 
         while (hiddenCount < numberToHide) 
         {
-            // The "index" gets a random number within the range of the words count
+            // The "index" gets a random number within the range of the _words count
             int index = random.Next(_words.Count); 
 
             // If the word at the index in the _words list is Not hiddent 
@@ -42,7 +42,7 @@ public class Scripture
         {
             foreach (Word word in _words) // For each index in the _words list  
             {
-                word.Hide(); // Hide all words
+                word.Hide(); // Hide each word
             }
         }
 
@@ -67,11 +67,11 @@ public class Scripture
     {
         foreach (Word word in _words) // For each index in the _words list 
         {
-            if (!word.IsHidden()) // If word is nNot hidden 
+            if (!word.IsHidden()) // If word is Not hidden 
             {
                 return false; // Save a false value
             }
         }
-        return true; // Else all words are hidden
+        return true; // Save a true value 
     }
 }
