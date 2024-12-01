@@ -10,13 +10,13 @@ public class Customer
         _address = address;
     }
 
-    // Method to get the person's name
+    // Method to get the person's _name
     public string GetName()
     {
         return _name;
     }
 
-    // Method to get the person's full address
+    // Method to get the _address list
     public Address GetAddress()
     {
         return _address;

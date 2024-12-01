@@ -31,6 +31,13 @@ public class Product
     {
         return _productId;
     }
+
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
+
+
 }
 
 
