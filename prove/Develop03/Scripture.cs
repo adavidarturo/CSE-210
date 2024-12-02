@@ -38,14 +38,6 @@ public class Scripture
                 hiddenCount++; // Increment the hiddenCount 
             }
         }
-        if (IsCompletelyHidden()) // Verify if it is completely hidden
-        {
-            foreach (Word word in _words) // For each index in the _words list  
-            {
-                word.Hide(); // Hide each word
-            }
-        }
-
     }
 
     // Method to display the scripture Reference and the "_" strings
