@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 class Program
 {
@@ -12,6 +13,7 @@ class Program
         
         bool running = true;
         int attempts = 0;
+        bool allWordsHidden = false;
 
         while (running) // Execute the loop
         {
@@ -36,6 +38,7 @@ class Program
                 if (scripture.IsCompletelyHidden()) 
                 {
                     running = false; // Stop the loop
+                    allWordsHidden = true;
                 }
                 else 
                 {
@@ -45,14 +48,25 @@ class Program
                     // If the "scripture" is all hidden
                     if (scripture.IsCompletelyHidden())
                     {
-                        running = false; // Stop the loop 
+                        running = false; // Stop the loop
+                        allWordsHidden = true;
                     }
                 }
             }
-            attempts++;
+            attempts++; // Final attempts
         }
+
         Console.Clear(); // Clean all again
-        Console.WriteLine(scripture.GetDisplayText()); // Show the final "_" strings 
-        Console.WriteLine("\n- All words hidden! Program finished."); // End message
+        Console.WriteLine(scripture.GetDisplayText()); // Show the final "_" strings
+        
+        if (allWordsHidden) // Final message
+        {
+            Console.WriteLine("\n- All words hidden! Program finished");
+        }
+        else
+        {
+            Console.WriteLine("\n- Program finished");
+        }
+
     }
 }
