@@ -32,7 +32,7 @@ public class Word
     // Method to Get the final Display in _text and "_"
     public string GetDisplayText()
     {
-        if (_isHidden) // If _isHidden is True 
+        if (IsHidden()) // If IsHidden()
         {
             // Save a new instance from the _text length in "_"
             return new string('_', _text.Length); 
