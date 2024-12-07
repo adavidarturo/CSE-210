@@ -37,23 +37,22 @@ public class Order
         return totalCost;
     }
 
-    // Method to optain each product name and ID
+    // Method to 
     public string GetPackingLabel()
     {
         string label = "Packing Label:\n";
         foreach (Product product in _products) // For each product in the list
         {
             // Get each Product name, ID and Quantity
-            label += $"{product.GetProductName()} (ID: {product.GetProductId()}) - Quantity: {product.GetQuantity()}\n";
+            label += product.Display() + "\n";
         }
         return label;
     }
     
-    // Method to optain the person's name, address list and full address
+    // Method to optain all of the Order information
     public string GetShippingLabel()
     {
-        string label = $"Shipping Label:\n{_customer.GetName()}\n{_customer.GetAddress().GetFullAddress()}";
-        return label;
+        return $"Shipping Label: \n{_customer.Display()}";
     }
 }
 

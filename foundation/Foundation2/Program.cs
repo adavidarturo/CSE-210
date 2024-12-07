@@ -26,19 +26,19 @@ class Program
         order2.AddProduct(product3);
 
         // Display Orders information
-        Console.WriteLine("\n--------------------------------------------");
+        Console.WriteLine("\n--------------------------------------------\n");
 
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
-        Console.WriteLine($"Total Cost: ${order1.GetTotalCost()}\n");
+        Console.WriteLine($"Total Cost: ${order1.GetTotalCost()}");
 
-        Console.WriteLine("\n--------------------------------------------");
+        Console.WriteLine("\n--------------------------------------------\n");
 
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
         Console.WriteLine($"Total Cost: ${order2.GetTotalCost()}");
 
-        Console.WriteLine("\n--------------------------------------------");
+        Console.WriteLine("\n--------------------------------------------\n");
     }
 }
 

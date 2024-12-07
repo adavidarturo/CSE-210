@@ -26,18 +26,17 @@ public class Product
         return _name;
     }
 
-    // Method to optain the product ID
-    public string GetProductId()
-    {
-        return _productId;
-    }
-
+    // Method to optain the quantity value
     public int GetQuantity()
     {
         return _quantity;
     }
 
-
+    // Method to display all Product information
+    public string Display()
+    {
+        return $"{_name} (ID: {_productId}) -  Quantity: {_quantity}";
+    }
 }
 
 

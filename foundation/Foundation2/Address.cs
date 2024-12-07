@@ -20,8 +20,8 @@ public class Address
         return _country.ToLower() == "usa";
     }
 
-    // Method to optain the complete address
-    public string GetFullAddress()
+    // Method to Show all Adress information
+    public string Display()
     {
         return $"{_street}\n{_city}, {_state}\n{_country}";
     }

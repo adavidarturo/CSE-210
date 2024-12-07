@@ -27,6 +27,12 @@ public class Customer
     {
         return _address.IsInUSA(); // Save the IsInUSA() method from "Address"
     }
+
+    // Method to display all Custumer information
+    public string Display()
+    {
+        return $"{_name}\n{_address.Display()}";
+    }
 }
 
 
