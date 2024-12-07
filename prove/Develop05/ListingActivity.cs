@@ -29,11 +29,17 @@ public class ListingActivity : Activity
     private List<string> GetListFromUser()
     {
         List<string> items = new List<string>(); // New "items" list
+        Console.WriteLine($"You have {_duration} seconds: ");
+        DateTime startTime = DateTime.Now; // Optain actual Now
         while (true)
         {
-            Console.Write("> "); // Prompt
+            // If DateTime.Now - startTime in seconds is major or equal than _duration
+            if ((DateTime.Now - startTime).TotalSeconds >= _duration)
+            {
+                break;
+            }
+            Console.Write("> "); 
             string item = Console.ReadLine(); // Optain "item" strings
-            if (string.IsNullOrEmpty(item)) break; // If there is nothing in the string, "break" 
             items.Add(item); // Add each item to the "items" list
         }
         return items; // Save "items" list
