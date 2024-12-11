@@ -49,7 +49,7 @@ public class ReflectingActivity : Activity
         return question; // Save question
     }
     
-    // Method to Display the Prmpt and indications
+    // Method to Display the Prompt and indications
     private void DisplayPrompt()
     {
         Console.WriteLine("Consider the following prompt: \n");
